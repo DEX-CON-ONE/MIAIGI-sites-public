@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>miaigi — Practical AI for Independent Businesses</title>
-    <meta name="description" content="Practical AI and GenAI consulting for small teams. Automate the boring work, improve quality, and expand capacity — safely, on the Microsoft stack." />
-    <meta name="keywords" content="AI consulting, small business automation, Microsoft 365, Power Automate, Copilot, SQL Server, data strategy" />
+  <meta name="description" content="Practical AI and GenAI consulting for small teams. Automate the boring work, improve quality, and expand capacity — safely, on your existing stack." />
+  <meta name="keywords" content="AI consulting, small business automation, Microsoft 365, Google Workspace, AWS, Power Automate, Copilot, SQL Server, data strategy" />
   <meta property="og:title" content="miaigi — Practical AI for Independent Businesses" />
     <meta property="og:description" content="Practical AI and GenAI consulting for small teams. Automate the boring work, improve quality, and expand capacity — safely, on the Microsoft stack." />
     <meta property="og:type" content="website" />
@@ -14,6 +14,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="site.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,10 +28,11 @@
         <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
         <nav id="site-nav" class="site-nav" aria-label="Primary">
           <ul>
+            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#use-cases">Use Cases</a></li>
             <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -44,9 +46,39 @@
           <h1 id="hero-title">Practical AI for independent businesses</h1>
           <p class="tagline">your local ai expert</p>
           <p class="lead">Automate the boring work, improve quality, and give your team more hours in the day — without breaking your systems (or your brain).</p>
-          <p class="trust">Microsoft‑first · Security‑minded · Plain‑English delivery</p>
+          <p class="trust">Works with your stack · Security‑minded · Plain‑English delivery</p>
           <div class="cta-row">
             <a class="button primary" href="mailto:hello@myai.guy?subject=Discovery%20Call" aria-label="Book a free discovery call by email">Book a free discovery call</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About Gareth</h2>
+          <p>Hi, I’m <strong>Gareth Huggins</strong> — Microsoft SQL Server specialist and founder of <strong>SQL OPTIMISE</strong>. I’ve spent <strong>more than a decade</strong> improving database performance and reliability in regulated industries (finance, defence, energy, healthcare). Along the way I’ve <strong>automated myself out of more jobs than most people have had interviews</strong> — on purpose.</p>
+          <p>That obsession with operational excellence is exactly why I’m an effective AI consultant: I hunt for wasted effort, design guardrails, and automate the right tasks so your team gets time back <strong>without</strong> losing control of quality or security. I speak DBA and business, so you don’t have to choose between them.</p>
+
+          <div class="about-grid">
+            <div>
+              <h3>About miaigi</h3>
+              <p><strong>Built in the wild, delivered as a service.</strong></p>
+              <p>miaigi started the way most good services do: helping family and friends who didn’t have time to decode AI hype. We fixed small, annoying problems first — drafting emails, tidying spreadsheets, building light automations — with simple guardrails so nothing went rogue.</p>
+              <p>One close friend was openly sceptical. After a few hands‑on demos that showed what the tech can do — and how simple it can be to use — they chose to kick off their own project. That was the moment: capability and ease beat opinion.</p>
+              <p>That led to an ambitious web build and content push for a memecoin project. The goal wasn’t speculation; it was execution — ship a fast site, publish consistently, and cultivate a community. It worked: daily engagement, repeat visitors, and a loyal audience that actually cared. The takeaway for independents is simple: thoughtful automation + useful content + clear feedback loops = momentum.</p>
+            </div>
+            <div>
+              <h3>How we serve you</h3>
+              <ul>
+                <li><strong>Start small, prove value quickly.</strong> One process, measurable hours back.</li>
+                <li><strong>Your stack first.</strong> We meet you where you are — Microsoft 365, Google Workspace, AWS/Azure/GCP, Slack, Notion, SQL, and more.</li>
+                <li><strong>Plain-English delivery.</strong> No black boxes — you’ll know what runs, where, and why.</li>
+                <li><strong>Guardrails by default.</strong> Access controls, logging, human review, and handover docs.</li>
+                <li><strong>Outcomes over ornaments.</strong> Faster responses, fewer errors, happier customers.</li>
+              </ul>
+              <p class="note">That’s what miaigi will do for you. We will wax on, wax off your AI to submission — only follow the instructions we give.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -109,32 +141,9 @@
         </div>
       </section>
 
-      <!-- Mini Case Studies -->
-      <section id="case-studies" class="section" aria-labelledby="case-studies-title">
-        <div class="container">
-          <h2 id="case-studies-title">Mini Case Studies</h2>
-          <div class="cases">
-            <article class="case">
-              <h3>1) Change requests, without the chaos</h3>
-              <p>A small tech team managed database change requests in chat and email. We implemented a simple workflow with <strong>Microsoft Forms + Power Automate + Teams</strong> and a tracker. Result: centralised intake, time‑stamped approvals, and faster turnaround — with an audit trail.</p>
-            </article>
-            <article class="case">
-              <h3>2) Reliable reporting on Azure SQL MI</h3>
-              <p>A client’s reporting queries hammered production. We materialised a heavy view into a table via a scheduled SQL Agent job (skips if BI users are active), and cleaned historical rows on a timer. Result: predictable refreshes, fewer CPU spikes, and happier dashboards.</p>
-            </article>
-          </div>
-          <p class="note small">More examples available on request. We keep this section small by design.</p>
-        </div>
-      </section>
+      
 
-      <!-- About -->
-      <section id="about" class="section" aria-labelledby="about-title">
-        <div class="container">
-          <h2 id="about-title">About Gareth</h2>
-          <p>Hi, I’m <strong>Gareth Huggins</strong> — Microsoft SQL Server specialist and founder of <strong>SQL OPTIMISE</strong>. I’ve spent <strong>more than a decade</strong> improving database performance and reliability in regulated industries (finance, defence, energy, healthcare). Along the way I’ve <strong>automated myself out of more jobs than most people have had interviews</strong> — on purpose.</p>
-          <p>That obsession with operational excellence is exactly why I’m an effective AI consultant: I hunt for wasted effort, design guardrails, and automate the right tasks so your team gets time back <strong>without</strong> losing control of quality or security. I speak DBA and business, so you don’t have to choose between them.</p>
-        </div>
-      </section>
+      
 
       <!-- How We Work -->
       <section id="how-we-work" class="section" aria-labelledby="how-title">
@@ -155,7 +164,7 @@
           <h2 id="faq-title">FAQ</h2>
           <details>
             <summary>Do we need fancy tools?</summary>
-            <p>No. We start with what you already have (Microsoft 365, Power Automate, SharePoint, Teams, SQL).</p>
+            <p>No. We start with what you already have — Microsoft 365, Google Workspace, AWS/Azure/GCP, Slack, Notion, SQL — and adapt to your environment.</p>
           </details>
           <details>
             <summary>Is this safe?</summary>
@@ -165,6 +174,23 @@
             <summary>How do you price?</summary>
             <p>Fixed‑price pilots or a day rate for short engagements. We agree scope before we start.</p>
           </details>
+        </div>
+      </section>
+
+      <!-- Case Studies -->
+      <section id="case-studies" class="section" aria-labelledby="case-studies-title">
+        <div class="container">
+          <h2 id="case-studies-title">Case Studies</h2>
+          <div class="cases">
+            <article class="case">
+              <h3>1) Change requests, without the chaos</h3>
+              <p>A small tech team managed database change requests in chat and email. We implemented a simple workflow with <strong>Microsoft Forms + Power Automate + Teams</strong> and a tracker. Result: centralised intake, time‑stamped approvals, and faster turnaround — with an audit trail.</p>
+            </article>
+            <article class="case">
+              <h3>2) Reliable reporting on Azure SQL MI</h3>
+              <p>A client’s reporting queries hammered production. We materialised a heavy view into a table via a scheduled SQL Agent job (skips if BI users are active), and cleaned historical rows on a timer. Result: predictable refreshes, fewer CPU spikes, and happier dashboards.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -212,16 +238,8 @@
       </div>
     </footer>
 
+    <a href="#top" id="back-to-top" class="back-to-top" aria-label="Back to top">↑</a>
     <script>
-      // Nav toggle for small screens
-      const toggle = document.querySelector('.nav-toggle');
-      const nav = document.getElementById('site-nav');
-      toggle?.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        nav?.classList.toggle('open');
-      });
-
       // Current year in footer
       document.getElementById('year').textContent = String(new Date().getFullYear());
     </script>
