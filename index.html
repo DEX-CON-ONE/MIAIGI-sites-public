@@ -14,7 +14,6 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="site.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -238,10 +237,21 @@
       </div>
     </footer>
 
-    <a href="#top" id="back-to-top" class="back-to-top" aria-label="Back to top">↑</a>
     <script>
+      // Nav toggle for small screens
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('site-nav');
+      toggle?.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        nav?.classList.toggle('open');
+      });
+
       // Current year in footer
       document.getElementById('year').textContent = String(new Date().getFullYear());
     </script>
+    
+    <!-- Enhanced JavaScript for modern interactions -->
+    <script src="site.js" defer></script>
   </body>
   </html>
