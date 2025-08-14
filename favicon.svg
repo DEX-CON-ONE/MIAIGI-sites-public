@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Star badge">
+  <rect width="64" height="64" rx="12" fill="#0B5FFF"/>
+  <polygon points="32,8 37,21 51,23 41,33 43,47 32,40 21,47 23,33 13,23 27,21" fill="#ffffff"/>
+</svg>
