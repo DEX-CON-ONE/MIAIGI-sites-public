@@ -1,44 +1,51 @@
-# miaigi — static site
+# miaigi — Practical AI for independent businesses
 
-Single-page static site for small-business AI consulting. No build tools. Works on GitHub Pages.
+Helping small, independent teams automate the boring work, improve quality, and win back hours — safely, on the tools you already use.
 
-## Files
-- index.html — content and markup
-- styles.css — small, accessible styles
-- logo.svg — simple text + three-star badge (replace when you supply your image)
-- favicon.svg — blue square with white star
+This is the public site for miaigi ("my AI guy"). It doubles as a live example of how I use AI, GitHub Copilot, and GitHub to deliver useful results quickly and transparently.
 
-## Customize
-- Update email in `index.html` (Contact + hero CTA)
-- Choose lead gen:
-	- HubSpot form embed (uncomment in Contact section and set portalId/formId)
-	- or Microsoft Bookings (replace `/bookings` link, or embed iframe)
-- Replace branding (title, logo.svg) if needed
-- Optional: add Open Graph image (1200x630) and update `<meta property="og:image">`
+## What I do
 
-## Deploy to GitHub Pages
-1. Create a repo and push these files to the `main` branch
-2. In Settings → Pages, set Source to `Deploy from a branch`, Branch `main / root`
-3. Wait for publish; your site will be available at the Pages URL
+- AI discovery and quick‑win pilots
+- Process automation (Power Automate, scripts, lightweight integrations)
+- Practical GenAI (drafts, summaries, internal Q&A over your docs)
+- AI readiness and governance (guardrails, access, logging, handover docs)
 
-## Accessibility & performance
-- Semantic headings, visible focus styles, colour contrast ≥ 4.5:1
-- Smooth scroll and tiny JS for the mobile menu
-- Single small CSS file (<10KB), SVG assets, no analytics by default
+## Built with AI, on purpose
 
-## Later
-- Enable HubSpot form or Bookings iframe for proper lead capture
-- Add favicons (PNG) via your preferred generator
-- Add client logos or a PDF download as needed
+I co‑created this site with GitHub Copilot to prove the point:
 
-## HubSpot vs Microsoft Bookings (quick guide)
+- From prompt to page: Copilot drafted the initial copy and HTML/CSS skeleton; I iterated the tone to match how I speak with clients.
+- Fast refactors: structure, headings, and accessibility tweaks landed in minutes, not days.
+- No heavy stack: pure HTML/CSS + a few lines of JavaScript — deployable straight to GitHub Pages.
+- Transparent version history: every change is tracked in Git, so improvements are easy to review and reuse.
 
-- HubSpot forms:
-	- Pros: better lead capture, CRM, email follow-up, custom fields, routing
-	- Cons: introduces third-party script; may set cookies if tracking enabled
-	- How: uncomment the embed in `index.html` Contact section, set `portalId` and `formId`; you can omit the tracking code for a lighter, cookie-minimal setup
+The takeaway for clients: pairing an expert with AI tools collapses the time from idea → working result, without sacrificing clarity or control.
 
-- Microsoft Bookings:
-	- Pros: instant scheduling, native Microsoft 365, no extra scripts if you use a link
-	- Cons: weaker lead data/CRM; you’ll rely on manual follow-up or additional tools
-	- How: keep `/bookings` link or embed the iframe (example in `index.html` comment)
+## How I work with GitHub + GitHub Copilot
+
+- Draft and refine: use Copilot to generate first drafts (copy, markup, flows), then tighten with human judgement.
+- Guardrails: keep changes small and reviewable; prefer simple, auditable solutions.
+- Reuse playbooks: turn good prompts and patterns into repeatable checklists for your team.
+- Ship often: frequent, low‑risk updates so value shows up early and keeps compounding.
+
+## Why this matters for your business
+
+- Speed: get working demos and measurable wins in weeks, not quarters.
+- Quality: human‑in‑the‑loop reviews and clear boundaries for data, access, and outputs.
+- Cost control: narrow scope, prove value, then scale what works.
+
+## Work with me
+
+- Book a free discovery call: `/bookings` (replace with your Microsoft Bookings link)
+- Email: `hello@myai.guy`
+
+## For developers (notes)
+
+This site is a single‑page static site intended for GitHub Pages.
+
+- Files: `index.html`, `styles.css`, `site.js`, `logo.svg`, `favicon.svg`
+- No build tools; keep assets small and accessible (contrast ≥ 4.5:1, visible focus, semantic headings)
+- Deploy: push to `main`, then enable GitHub Pages (Settings → Pages → Deploy from a branch → `main / root`)
+
+All content © miaigi. All rights reserved.
