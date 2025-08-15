@@ -708,3 +708,89 @@ details.opening {
     border-right: 0;
   }
 }
+
+/* Read More functionality for mobile */
+.expandable-content {
+  position: relative;
+}
+
+.expandable-content .content-preview {
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expandable-content .content-full {
+  display: none;
+}
+
+.expandable-content.expanded .content-preview {
+  display: none;
+}
+
+.expandable-content.expanded .content-full {
+  display: block;
+  animation: fadeInContent 0.4s ease;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: var(--blue-50);
+  color: var(--blue-600);
+  border: 1px solid var(--blue-200);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.read-more-btn:hover {
+  background: var(--blue-100);
+  border-color: var(--blue-300);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(11, 95, 255, 0.15);
+}
+
+.read-more-btn:active {
+  transform: translateY(0);
+}
+
+.read-more-btn .icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.expandable-content.expanded .read-more-btn .icon {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Only apply read more on mobile and tablet */
+@media (min-width: 769px) {
+  .expandable-content .content-preview {
+    display: none !important;
+  }
+  
+  .expandable-content .content-full {
+    display: block !important;
+  }
+  
+  .read-more-btn {
+    display: none !important;
+  }
+}
