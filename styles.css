@@ -662,3 +662,44 @@ details.opening {
   .steps li{padding:16px;padding-top:50px}
   .rule{padding:16px 20px}
 }
+
+/* Microsoft Bookings iframe responsive styles */
+.bookings-embed {
+  margin: 32px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--bg-elevated);
+}
+
+.bookings-embed iframe {
+  border: 1px solid var(--blue-200);
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bookings-embed iframe:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue-300);
+}
+
+@media (max-width: 768px) {
+  .bookings-embed iframe {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookings-embed {
+    margin: 24px -16px;
+    border-radius: 0;
+  }
+  
+  .bookings-embed iframe {
+    height: 450px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
