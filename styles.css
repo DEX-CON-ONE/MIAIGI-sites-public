@@ -129,6 +129,11 @@ img{max-width:100%;height:auto}
 
 .contact a{color:var(--blue-600);transition:color 0.2s ease}
 .contact a:hover{color:var(--blue-700)}
+
+/* LinkedIn icon styling */
+.linkedin-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.linkedin-icon{vertical-align:middle;transition:transform 0.2s ease;color:var(--blue-600)}
+.linkedin-link:hover .linkedin-icon{transform:scale(1.1);color:var(--blue-700)}
 a:focus-visible, button:focus-visible { outline:3px solid var(--blue-400); outline-offset:2px }
 
 @keyframes slideIn {
