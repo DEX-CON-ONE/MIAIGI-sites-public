@@ -464,6 +464,64 @@
     }
   };
 
+  // Read More functionality module
+  const ReadMore = {
+    init() {
+      // Only initialize on mobile/tablet screens
+      if (window.innerWidth > 768) return;
+      
+      document.querySelectorAll('.expandable-content').forEach(container => {
+        const btn = container.querySelector('.read-more-btn');
+        if (!btn) return;
+        
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.toggleContent(container);
+        });
+      });
+      
+      // Reinitialize on resize for responsive behavior
+      let resizeTimeout;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          this.handleResize();
+        }, 250);
+      });
+    },
+    
+    toggleContent(container) {
+      const isExpanded = container.classList.contains('expanded');
+      const btn = container.querySelector('.read-more-btn');
+      const btnText = btn.querySelector('.text');
+      
+      if (isExpanded) {
+        container.classList.remove('expanded');
+        btnText.textContent = 'Read More';
+        
+        // Smooth scroll to top of container
+        container.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      } else {
+        container.classList.add('expanded');
+        btnText.textContent = 'Read Less';
+      }
+    },
+    
+    handleResize() {
+      // Reset all expanded states on resize to handle viewport changes
+      if (window.innerWidth > 768) {
+        document.querySelectorAll('.expandable-content.expanded').forEach(container => {
+          container.classList.remove('expanded');
+          const btnText = container.querySelector('.read-more-btn .text');
+          if (btnText) btnText.textContent = 'Read More';
+        });
+      }
+    }
+  };
+
   // Initialize when DOM ready
   function init() {
     ScrollAnimations.init();
@@ -472,6 +530,7 @@
     ReturnToTop.init();
     Interactions.init();
     Performance.init();
+    ReadMore.init();
     
     console.log('miaigi enhancements loaded successfully');
   }

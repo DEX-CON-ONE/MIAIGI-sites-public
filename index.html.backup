@@ -63,21 +63,9 @@
             <div>
               <h3>About miaigi</h3>
               <p><strong>Built in the wild, delivered as a service.</strong></p>
-              <div class="expandable-content">
-                <div class="content-preview">
-                  <p>miaigi started the way most good services do: helping family and friends who didn't have time to decode AI hype. We fixed small, annoying problems first — drafting emails, tidying spreadsheets, building light automations — with simple guardrails so nothing went rogue.</p>
-                </div>
-                <div class="content-full">
-                  <p>miaigi started the way most good services do: helping family and friends who didn't have time to decode AI hype. We fixed small, annoying problems first — drafting emails, tidying spreadsheets, building light automations — with simple guardrails so nothing went rogue.</p>
-                  <p>One close friend was openly sceptical. After a few hands‑on demos that showed what the tech can do — and how simple it can be to use — they chose to kick off their own project. That was the moment: capability and ease beat opinion.</p>
-                  <p>That led to an ambitious web build and content push for a memecoin project. The goal wasn't speculation; it was execution — ship a fast site, publish consistently, and cultivate a community. It worked: daily engagement, repeat visitors, and a loyal audience that actually cared. The takeaway for independents is simple: thoughtful automation + useful content + clear feedback loops = momentum.</p>
-                </div>
-                <button class="read-more-btn" type="button">
-                  <span class="text">Read More</span>
-                  <span class="icon">▼</span>
-                </button>
-              </div>
-
+              <p>miaigi started the way most good services do: helping family and friends who didn’t have time to decode AI hype. We fixed small, annoying problems first — drafting emails, tidying spreadsheets, building light automations — with simple guardrails so nothing went rogue.</p>
+              <p>One close friend was openly sceptical. After a few hands‑on demos that showed what the tech can do — and how simple it can be to use — they chose to kick off their own project. That was the moment: capability and ease beat opinion.</p>
+              <p>That led to an ambitious web build and content push for a memecoin project. The goal wasn’t speculation; it was execution — ship a fast site, publish consistently, and cultivate a community. It worked: daily engagement, repeat visitors, and a loyal audience that actually cared. The takeaway for independents is simple: thoughtful automation + useful content + clear feedback loops = momentum.</p>
             </div>
             <div>
               <h3>How we serve you</h3>
@@ -128,54 +116,24 @@
           <div class="columns">
             <div class="column">
               <h3>AI (classic/ML) — great for:</h3>
-              <div class="expandable-content">
-                <div class="content-preview">
-                  <ul>
-                    <li><strong>Forecasting &amp; planning:</strong> demand, staffing, or stock level projections.</li>
-                    <li><strong>Anomaly detection:</strong> flag unusual spend, transactions, or KPI spikes.</li>
-                    <li><strong>Routing &amp; scheduling:</strong> optimise service routes, delivery windows, or job sequencing.</li>
-                  </ul>
-                </div>
-                <div class="content-full">
-                  <ul>
-                    <li><strong>Forecasting &amp; planning:</strong> demand, staffing, or stock level projections.</li>
-                    <li><strong>Anomaly detection:</strong> flag unusual spend, transactions, or KPI spikes.</li>
-                    <li><strong>Routing &amp; scheduling:</strong> optimise service routes, delivery windows, or job sequencing.</li>
-                    <li><strong>Quality checks:</strong> rules‑based data validation on imports and spreadsheets.</li>
-                    <li><strong>Document processing:</strong> OCR + rules to pull key fields from invoices, PDFs, or forms.</li>
-                  </ul>
-                </div>
-                <button class="read-more-btn" type="button">
-                  <span class="text">Read More</span>
-                  <span class="icon">▼</span>
-                </button>
-              </div>
+              <ul>
+                <li><strong>Forecasting &amp; planning:</strong> demand, staffing, or stock level projections.</li>
+                <li><strong>Anomaly detection:</strong> flag unusual spend, transactions, or KPI spikes.</li>
+                <li><strong>Routing &amp; scheduling:</strong> optimise service routes, delivery windows, or job sequencing.</li>
+                <li><strong>Quality checks:</strong> rules‑based data validation on imports and spreadsheets.</li>
+                <li><strong>Document processing:</strong> OCR + rules to pull key fields from invoices, PDFs, or forms.</li>
+              </ul>
             </div>
             <div class="column">
               <h3>GenAI — great for:</h3>
-              <div class="expandable-content">
-                <div class="content-preview">
-                  <ul>
-                    <li><strong>Customer support triage:</strong> a help assistant that answers from your docs (SharePoint/OneDrive) using retrieval‑augmented generation (RAG).</li>
-                    <li><strong>Sales &amp; marketing drafts:</strong> emails, proposals, web copy — in your voice, ready for human edit.</li>
-                    <li><strong>SOPs &amp; documentation:</strong> generate first drafts of procedures and how‑tos from subject‑matter notes.</li>
-                  </ul>
-                </div>
-                <div class="content-full">
-                  <ul>
-                    <li><strong>Customer support triage:</strong> a help assistant that answers from your docs (SharePoint/OneDrive) using retrieval‑augmented generation (RAG).</li>
-                    <li><strong>Sales &amp; marketing drafts:</strong> emails, proposals, web copy — in your voice, ready for human edit.</li>
-                    <li><strong>SOPs &amp; documentation:</strong> generate first drafts of procedures and how‑tos from subject‑matter notes.</li>
-                    <li><strong>Meeting notes &amp; follow‑ups:</strong> summarise calls and propose next actions.</li>
-                    <li><strong>Internal search:</strong> ask natural‑language questions over policies, price lists, or product specs.</li>
-                    <li><strong>Lightweight code helpers:</strong> build spreadsheet formulas, Power Automate flows, or queries faster.</li>
-                  </ul>
-                </div>
-                <button class="read-more-btn" type="button">
-                  <span class="text">Read More</span>
-                  <span class="icon">▼</span>
-                </button>
-              </div>
+              <ul>
+                <li><strong>Customer support triage:</strong> a help assistant that answers from your docs (SharePoint/OneDrive) using retrieval‑augmented generation (RAG).</li>
+                <li><strong>Sales &amp; marketing drafts:</strong> emails, proposals, web copy — in your voice, ready for human edit.</li>
+                <li><strong>SOPs &amp; documentation:</strong> generate first drafts of procedures and how‑tos from subject‑matter notes.</li>
+                <li><strong>Meeting notes &amp; follow‑ups:</strong> summarise calls and propose next actions.</li>
+                <li><strong>Internal search:</strong> ask natural‑language questions over policies, price lists, or product specs.</li>
+                <li><strong>Lightweight code helpers:</strong> build spreadsheet formulas, Power Automate flows, or queries faster.</li>
+              </ul>
             </div>
           </div>
           <p class="rule">Rule of thumb: AI decides, GenAI drafts. We combine both so the right tool does the right job.</p>
@@ -225,34 +183,11 @@
           <div class="cases">
             <article class="case">
               <h3>1) Change requests, without the chaos</h3>
-              <div class="expandable-content">
-                <div class="content-preview">
-                  <p>A small tech team managed database change requests in chat and email. We implemented a simple workflow with <strong>Microsoft Forms + Power Automate + Teams</strong> and a tracker.</p>
-                </div>
-                <div class="content-full">
-                  <p>A small tech team managed database change requests in chat and email. We implemented a simple workflow with <strong>Microsoft Forms + Power Automate + Teams</strong> and a tracker. Result: centralised intake, time‑stamped approvals, and faster turnaround — with an audit trail.</p>
-                </div>
-                <button class="read-more-btn" type="button">
-                  <span class="text">Read More</span>
-                  <span class="icon">▼</span>
-                </button>
-              </div>
+              <p>A small tech team managed database change requests in chat and email. We implemented a simple workflow with <strong>Microsoft Forms + Power Automate + Teams</strong> and a tracker. Result: centralised intake, time‑stamped approvals, and faster turnaround — with an audit trail.</p>
             </article>
             <article class="case">
               <h3>2) Reliable reporting on Azure SQL MI</h3>
-              <div class="expandable-content">
-                <div class="content-preview">
-                  <p>A client's reporting queries hammered production. We materialised a heavy view into a table via a scheduled SQL Agent job (skips if BI users are active), and cleaned historical rows on a timer.</p>
-                </div>
-                <div class="content-full">
-                  <p>A client's reporting queries hammered production. We materialised a heavy view into a table via a scheduled SQL Agent job (skips if BI users are active), and cleaned historical rows on a timer. Result: predictable refreshes, fewer CPU spikes, and happier dashboards.</p>
-                </div>
-                <button class="read-more-btn" type="button">
-                  <span class="text">Read More</span>
-                  <span class="icon">▼</span>
-                </button>
-              </div>
-            </article>
+              <p>A client’s reporting queries hammered production. We materialised a heavy view into a table via a scheduled SQL Agent job (skips if BI users are active), and cleaned historical rows on a timer. Result: predictable refreshes, fewer CPU spikes, and happier dashboards.</p>
             </article>
           </div>
         </div>
