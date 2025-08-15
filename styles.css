@@ -714,9 +714,27 @@ details.opening {
   position: relative;
 }
 
-.expandable-content .content-preview {
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+@media (max-width: 768px) {
+  .expandable-content .content-preview {
+    overflow: hidden;
+    position: relative;
+    max-height: 150px; /* Adjust based on content */
+  }
+
+  .expandable-content .content-preview::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(transparent, var(--bg-elevated));
+    pointer-events: none;
+  }
+
+  .expandable-content.expanded .content-preview::after {
+    display: none;
+  }
 }
 
 .expandable-content .content-full {

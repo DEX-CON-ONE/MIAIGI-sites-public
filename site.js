@@ -476,7 +476,7 @@
         
         btn.addEventListener('click', (e) => {
           e.preventDefault();
-          this.toggleContent(container);
+          ReadMore.toggleContent(container);
         });
       });
       
@@ -485,7 +485,7 @@
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-          this.handleResize();
+          ReadMore.handleResize();
         }, 250);
       });
     },
